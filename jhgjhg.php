@@ -1,4 +1,4 @@
 <?php
 
-print "asdasd";
+print "asdasds";
 
