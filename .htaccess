@@ -1,0 +1,17 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteCond %{REQUEST_URI} !\.css$
+RewriteCond %{REQUEST_URI} !\.js$
+RewriteCond %{REQUEST_URI} !\.jpg$ 
+RewriteCond %{REQUEST_URI} !\.jpeg$ 
+RewriteCond %{REQUEST_URI} !\.png$
+RewriteCond %{REQUEST_URI} !\.gif$
+RewriteCond %{REQUEST_URI} !\.ttf$
+
+RewriteCond %{REQUEST_URI} !administration/(.*)\.
+RewriteCond %{REQUEST_URI} !slice/(.*)\.
+RewriteCond %{REQUEST_URI} !repository/(.*)\.
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
