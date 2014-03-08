@@ -63,7 +63,7 @@ $urlMap = array(
     "meine-favoriten" => "meineFavoriten.php",
     "meine-freunde" => "meineFreunde.php",
     "geschenke" => "meineGeschenke.php",
-    "mein-profile" => "meinProfil.php"
+    "aaa" => "meinProfil.php"
 );
 
 
